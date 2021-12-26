@@ -1,0 +1,22 @@
+
+<div class="container">
+    <div class="header">
+        <h1>F1 Championship seasons</h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            <ul class="list-group" *ngIf="!raceMode">
+                <li class="list-group-item season-header"><b>Season</b></li>
+                <li class="list-group-item pointer" *ngFor="let item of seasonsObject" (click)="selectYear(item.season)">{{item.season}}</li>
+            </ul>
+            <ul class="list-group" *ngIf="raceMode">
+                <li class="list-group-item season-header"><b>Race winners</b>
+                    <button type="button" class="close btn-close pull-right" aria-label="Close" (click)="cancelRaceMode(false)">
+                        <span>&times;</span>
+                      </button>
+                </li>
+                <app-show-winners [year]="year"></app-show-winners>
+            </ul>
+        </div>
+    </div>
+</div>
