@@ -1,3 +1,11 @@
+## Brief information from the developer - Lefa Nyathi
+
+The application includes 3 components, one as a navigation bar, home and show winners component. 
+The home page has a title, the row and column for better disoplay of my data.
+The race mode option switches between season view and results view
+Show winners component view presents the results from the clicked year from anywhere between 2005
+to current date.
+
 # MobiquityTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.13.
