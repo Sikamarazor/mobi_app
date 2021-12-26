@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   seasonsObject: any;
   raceMode: boolean = false;
   year: string = "";
+  title = 'F1 Championship seasons';
 
   constructor(private operationsService: OperationsService) { }
 
@@ -18,7 +19,7 @@ export class HomeComponent implements OnInit {
   loadFOneSeasons() {
 
     this.operationsService.getListOfSeasons().subscribe((data: any) => {
-      
+
         if (data) 
         {
           if (data.MRData) 
